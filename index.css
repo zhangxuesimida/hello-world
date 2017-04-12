@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.first{
+	height:120px;
+	order:2;
+}
+.second{
+	order:2;
+	height:100px;
+}
+.third{
+	order:2;
+	height:40px;
+}
+.four{
+	height:200px;
+	order:3;
+}
+.parent div{
+	width:150px;
+	border:1px solid red;
+}
+.parent{
+	display:flex;
+	flex-flow: row wrap;
+	align-items:center;
+	justify-content:space-between;
+}
+@media screen and (max-width:640px){
+.parent{
+	align-items:flex-start;
+}
+.four{
+	order:-1111;
+}
+}
